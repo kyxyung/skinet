@@ -20,6 +20,8 @@ public class ProductRepository(StoreContext context) : IProductRepository
             _ => query.OrderByDescending(x => x.Id),
         };
         
+        
+        
         return await query.ToListAsync();
     }
 
